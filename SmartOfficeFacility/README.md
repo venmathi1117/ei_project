@@ -39,11 +39,12 @@ This project demonstrates **OOP principles** and the use of **design patterns**:
 ```bash
 cd SmartOfficeFacility/src
 javac *.java
-Run the application
-
+```
+## Run the application
+```
 java Main
-
-
+```
+```
 Default login
 
 === Smart Office Facility ===
@@ -115,57 +116,10 @@ SmartOfficeFacility/
 │   └── Authentication.java
 └── README.md
 
-UML Class Diagram
-+---------------------+           +---------------------+
-|     Main            |           |   Authentication    |
-|---------------------|           |---------------------|
-| + main(args): void  | --------> | + login(): boolean  |
-+---------------------+           +---------------------+
 
-            |
-            v
-+-------------------------+
-| OfficeConfiguration     |
-|-------------------------|
-| + configureRooms()      |
-| + getRoomById()         |
-| + getRooms()            |
-+-------------------------+
-            |
-     1..*   | has
-            v
-+-------------------------+
-| Room                    |
-|-------------------------|
-| - id, isBooked, sensors |
-| + setOccupancy()        |
-| + attachSensor()        |
-| + book(), cancelBooking()|
-+-------------------------+
-            |
-            v
-+------------------+
-| <<interface>>    |
-| Sensor           |
-| + update()       |
-+------------------+
-   ^             ^
-   |             |
-+---------------------+   +--------------------------+
-| LightControl        |   | AirConditionControl      |
-+---------------------+   +--------------------------+
-
-+-------------------------+
-| <<interface>> Command   |
-| + execute(): void       |
-+-------------------------+
-   ^                  ^
-   |                  |
-+--------------------+   +---------------------+
-| BookRoomCommand    |   | CancelRoomCommand   |
-+--------------------+   +---------------------+
 ```
 ## Contact
 
 For any queries or further information, please reach out to [venmathi1117@gmail.com](mailto:venmathi1117.com) .
+
 
