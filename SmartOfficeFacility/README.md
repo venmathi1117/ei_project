@@ -39,3 +39,6 @@ This project demonstrates **OOP principles** and the use of **design patterns**:
 ```bash
 cd SmartOfficeFacility/src
 javac *.java
+java Main
+```
+
